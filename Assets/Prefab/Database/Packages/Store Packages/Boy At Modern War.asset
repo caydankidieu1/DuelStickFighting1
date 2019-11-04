@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cbda6a34c697b44b9dfd345e2a5333, type: 3}
+  m_Name: Boy At Modern War
+  m_EditorClassIdentifier: 
+  id: 10
+  name: Boy At Modern War
+  description: 'Weapon :
+
+    -Bazooka
+
+    -Vector
+
+    -S686
+
+    -Magnum
+
+    -Black Pan'
+  cost: 4.99
+  namePackage: com.duel.pack5
+  icon: {fileID: 21300000, guid: d43b3e0b12c12d544a57fe8b11248ef8, type: 3}
+  weapons:
+  - {fileID: 11400000, guid: a08076a779eeb964283c768090fda6b8, type: 2}
+  - {fileID: 11400000, guid: 0096c3323d480f94bb0b5cc376706d88, type: 2}
+  - {fileID: 11400000, guid: a67e1ab9f3ef52e44be67c9aa7e2b8d0, type: 2}
+  - {fileID: 11400000, guid: cb2681a02ccacd544b7620aadb9fa461, type: 2}
+  - {fileID: 11400000, guid: 9fcead8a23fbb2443bf7bb8a61ac2004, type: 2}
+  skins: []
+  checkBuy: 0
