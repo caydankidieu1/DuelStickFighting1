@@ -17,7 +17,7 @@ public class QuestData
             test.number = questUI.quest[i].number;
             test.nowDay = questUI.quest[i].nowDay;
             test.CheckClaim = questUI.quest[i].checkClaim;
-            test.CheckReceived = questUI.quest[i].checkClaim;
+            test.CheckReceived = questUI.quest[i].checkReceived;
 
             Q.Add(test);
         }

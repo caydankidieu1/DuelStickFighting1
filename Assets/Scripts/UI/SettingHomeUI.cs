@@ -47,9 +47,6 @@ public class SettingHomeUI : MonoBehaviour
         Store.SetActive(false);
 
         leftHomeClone.SetActive(false);
-
-        ManagerAds.Ins.ShowBanner();
-
     }
 
     public void SettingUI()
@@ -88,8 +85,6 @@ public class SettingHomeUI : MonoBehaviour
 
     public void backHome()
     {
-        ManagerAds.Ins.ShowBanner();
-
         setting.gameObject.SetActive(true);
         back.gameObject.SetActive(false);
         coins.SetActive(true);
@@ -279,7 +274,6 @@ public class SettingHomeUI : MonoBehaviour
 
     public void activelAllButton()
     {
-        ManagerAds.Ins.ShowBanner();
 
         adventure.enabled = true;
         survival.enabled = true;

@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class ShowBannerPopUp : MonoBehaviour
 {
+    [SerializeField] private BattleUI battle;
+
     private void OnEnable()
     {
-        ManagerAds.Ins.ShowInterstitial();
-        Debug.Log("show Video");
-        //ManagerAds.Ins.ShowBanner();
-    }
-
-    private void OnDisable()
-    {
-        Debug.Log("no");
+        if (!battle.activelSecondChange)
+        {
+            ManagerAds.Ins.ShowInterstitial();
+            Debug.Log("Show Video Inter for GameWin");
+        }
     }
 }

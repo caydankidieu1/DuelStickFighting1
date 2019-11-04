@@ -202,6 +202,8 @@ MonoBehaviour:
   enableWeapon: 0
   audioName: 
   audioColl: BallSlash
+  checkP1: 0
+  checkP2: 0
 --- !u!1 &6765638511734311666
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6765638511734311666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0.014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6765638511734806236}
@@ -317,8 +319,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.4
-      minScalar: 0.25
+      scalar: 0.2
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -894,7 +896,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.2
+      value: 0.0001
       mode: 0
       spread: 0
       speed:
@@ -5034,7 +5036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6765638511734311678}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.812, y: -0.038, z: 0}
+  m_LocalPosition: {x: 0.812, y: -0.032, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6765638511734806226}
@@ -5719,7 +5721,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.8
+      value: 0.17
       mode: 0
       spread: 0
       speed:
@@ -9872,11 +9874,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1280247516693278355}
     m_Modifications:
-    - target: {fileID: 7548475415295938989, guid: aab6df6df6aefb041a7a2ade556c0660,
-        type: 3}
-      propertyPath: m_Name
-      value: BluePortalNewVersion
-      objectReference: {fileID: 0}
     - target: {fileID: 7548475415296100593, guid: aab6df6df6aefb041a7a2ade556c0660,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9931,6 +9928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548475415295938989, guid: aab6df6df6aefb041a7a2ade556c0660,
+        type: 3}
+      propertyPath: m_Name
+      value: BluePortalNewVersion
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab6df6df6aefb041a7a2ade556c0660, type: 3}

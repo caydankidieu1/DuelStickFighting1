@@ -120,7 +120,6 @@ public class SystemDamage : MonoBehaviour
         trueDeathAllEnemy = false;
         victory = false;
         loser = false;
-        ManagerAds.Ins.ShowBanner();
     }
     IEnumerator wait()
     {

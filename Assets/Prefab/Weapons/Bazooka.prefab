@@ -117,8 +117,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.4
-      minScalar: 0.25
+      scalar: 0.11
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -712,7 +712,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.8
+      value: 0.08
       mode: 0
       spread: 0
       speed:
@@ -5550,7 +5550,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.2
+      value: 0.0001
       mode: 0
       spread: 0
       speed:
@@ -9836,6 +9836,8 @@ MonoBehaviour:
   enableWeapon: 0
   audioName: rocket
   audioColl: BallSlash
+  checkP1: 0
+  checkP2: 0
 --- !u!1 &6915485776570153588
 GameObject:
   m_ObjectHideFlags: 0
@@ -9873,11 +9875,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2350329996949471858}
     m_Modifications:
-    - target: {fileID: 7548475415295938989, guid: aab6df6df6aefb041a7a2ade556c0660,
-        type: 3}
-      propertyPath: m_Name
-      value: BluePortalNewVersion
-      objectReference: {fileID: 0}
     - target: {fileID: 7548475415296100593, guid: aab6df6df6aefb041a7a2ade556c0660,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9932,6 +9929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548475415295938989, guid: aab6df6df6aefb041a7a2ade556c0660,
+        type: 3}
+      propertyPath: m_Name
+      value: BluePortalNewVersion
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab6df6df6aefb041a7a2ade556c0660, type: 3}

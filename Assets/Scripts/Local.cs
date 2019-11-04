@@ -387,9 +387,4 @@ public class Local : MonoBehaviour
         ManagerAds.Ins.HideBanner();
     }
 
-    private void OnDisable()
-    {
-        system.trueDeath = false;
-        system.loser = false;
-    }
 }

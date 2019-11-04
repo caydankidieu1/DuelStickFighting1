@@ -151,6 +151,7 @@ MonoBehaviour:
   forceRotateMin: 0
   forceRotateMax: 3.5
   timeToDestroyAffterBoom: 0.5
+  parent: {fileID: 0}
   exploreNow: 0
   activelExploreNow: 2
 --- !u!1 &8179143226023681176

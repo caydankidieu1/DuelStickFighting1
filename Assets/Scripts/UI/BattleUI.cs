@@ -60,13 +60,23 @@ public class BattleUI : MonoBehaviour
         popUpLeft.GetComponent<RectTransform>().anchoredPosition = new Vector2(-200, 40);
         popUpRight.GetComponent<RectTransform>().anchoredPosition = new Vector2(200, 40);
 
+        popUp.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        popUp.SetActive(false);
         activelAnim = false;
         activelSecondChange = false;
         activel = true;
         btnFireCloneRight.fillAmount = 1;
         btnFireCloneLeft.fillAmount = 1;
+        ManagerAds.Ins.HideBanner();
+    }
 
-        popUp.SetActive(false);
+    private void OnDisable()
+    {
+        ManagerAds.Ins.ShowBanner();
     }
 
     private void FixedUpdate()
@@ -305,15 +315,5 @@ public class BattleUI : MonoBehaviour
     public void activelChangeTest()
     {
         activelSecondChange = false;
-    }
-
-    private void OnEnable()
-    {
-        ManagerAds.Ins.HideBanner();
-    }
-
-    private void OnDisable()
-    {
-        ManagerAds.Ins.ShowBanner();
     }
 }

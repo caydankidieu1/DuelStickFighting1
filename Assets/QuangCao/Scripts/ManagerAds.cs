@@ -18,6 +18,9 @@ public enum BannerType
 public class ManagerAds : MonoBehaviour
 {
     public static ManagerAds Ins;
+
+    [Header("Check under 18 year old")] public bool isUnder18Age;
+
     [Header("Admob")]
     public BannerType bannerType = BannerType.SmartBanner;
     [Space(1)]
@@ -83,7 +86,6 @@ public class ManagerAds : MonoBehaviour
     {
         return PlayerPrefs.GetInt(REMOVE_ADS, 0) == 0;
     }
-
 
     public void Start()
     {
@@ -247,7 +249,9 @@ public class ManagerAds : MonoBehaviour
     public void RequestRewardBasedVideo()
     {
 #if USE_ADMOB
-        AdRequest request = new AdRequest.Builder().Build();
+        AdRequest request = new AdRequest.Builder()
+            .AddExtra("tag_for_under_age_of_consent", isUnder18Age ? "true" : "false")
+            .Build();
         rewardBasedVideo.LoadAd(request, ID_REWARD);
 
 #endif
@@ -271,6 +275,18 @@ public class ManagerAds : MonoBehaviour
 
         Advertisement.Show("video", options);
 #endif
+    }
+
+    public void firstGame()
+    {
+        isUnder18Age = true;
+        PlayerPrefs.SetString(Tags.beginAll, "true");
+    }
+
+    public void firstGameFall()
+    {
+        isUnder18Age = false;
+        PlayerPrefs.SetString(Tags.beginAll, "false");
     }
 
     public void ShowBanner()
@@ -324,7 +340,9 @@ public class ManagerAds : MonoBehaviour
         bannerView.OnAdLoaded += BannerLoadSucces;
         bannerView.OnAdFailedToLoad += BannerLoadFailed;
         // Load a banner ad.
-        AdRequest request = new AdRequest.Builder().Build();
+        AdRequest request = new AdRequest.Builder()
+            .AddExtra("tag_for_under_age_of_consent", isUnder18Age ? "true" : "false")
+            .Build();
         this.bannerView.LoadAd(request);
 
     }
@@ -358,7 +376,9 @@ public class ManagerAds : MonoBehaviour
         this.interstitial.OnAdLeavingApplication += this.HandleInterstitialLeftApplication;
 
         // Load an interstitial ad.
-        AdRequest request = new AdRequest.Builder().Build();
+        AdRequest request = new AdRequest.Builder()
+            .AddExtra("tag_for_under_age_of_consent", isUnder18Age ? "true" : "false")
+            .Build();
         this.interstitial.LoadAd(request);
         #endregion
 #endif

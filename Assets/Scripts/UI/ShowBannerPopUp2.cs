@@ -6,9 +6,9 @@ public class ShowBannerPopUp2 : MonoBehaviour
 {
     public BattleUI battle;
 
-    private void OnDisable()
+    private void OnEnable()
     {
-        if (battle.activelSecondChange == false)
+        if (!battle.activelSecondChange)
         {
             ManagerAds.Ins.ShowInterstitial();
             Debug.Log("show Video");

@@ -65,8 +65,6 @@ public class SettingMenuUI : MonoBehaviour
     }
     public void Home()
     {
-        ManagerAds.Ins.ShowBanner();
-
         BattleUI.SetActive(false);
         BattleUIPVP.SetActive(false);
         MainScreenUI.SetActive(true);
@@ -96,8 +94,6 @@ public class SettingMenuUI : MonoBehaviour
     }
     public void HomeClone()
     {
-        ManagerAds.Ins.ShowBanner();
-
         BattleUI.SetActive(false);
         BattleUIPVP.SetActive(false);
         MainScreenUI.SetActive(true);
@@ -114,8 +110,6 @@ public class SettingMenuUI : MonoBehaviour
     }
     public void HomeCloneOnStore()
     {
-        ManagerAds.Ins.ShowBanner();
-
         BattleUI.SetActive(false);
         BattleUIPVP.SetActive(false);
         MainScreenUI.SetActive(true);
@@ -205,8 +199,6 @@ public class SettingMenuUI : MonoBehaviour
     }
     public void ChoiceLevel()
     {
-        ManagerAds.Ins.ShowBanner();
-
         BattleUI.SetActive(false);
         BattleUIPVP.SetActive(false);
         MainScreenUI.SetActive(true);

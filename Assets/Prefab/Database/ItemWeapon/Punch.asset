@@ -30,8 +30,8 @@ MonoBehaviour:
   checkVideoUnlock: 0
   videoUnlock: 0
   RateLucky: 0
-  checkBuy: 0
-  checkUse: 0
+  checkBuy: 1
+  checkUse: 1
   position: {x: 0.096, y: -0.388, z: 0}
   rotation: {x: 0, y: 0, z: -90}
   Scale: {x: 0.5, y: 0.5, z: 0.5}

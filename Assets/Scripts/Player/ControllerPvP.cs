@@ -42,11 +42,6 @@ public class ControllerPvP : MonoBehaviour
 
     private void Start()
     {
-        activel1 = true;
-        btnFireCloneP1.fillAmount = 1;
-        activel2 = true;
-        btnFireCloneP2.fillAmount = 1;
-
         PoPUP.SetActive(false);
         POPP1.SetActive(false);
         POPP2.SetActive(false);
@@ -172,6 +167,11 @@ public class ControllerPvP : MonoBehaviour
     private void OnEnable()
     {
         ManagerAds.Ins.HideBanner();
+
+        activel1 = true;
+        btnFireCloneP1.fillAmount = 1;
+        activel2 = true;
+        btnFireCloneP2.fillAmount = 1;
     }
 
     private void OnDisable()
