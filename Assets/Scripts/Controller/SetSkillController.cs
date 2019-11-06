@@ -36,7 +36,8 @@ public class SetSkillController : MonoBehaviour
     private int cloneSpeel3;
     private int cloneSpeel4;
 
-    private void Start()
+
+    private void OnEnable()
     {
         if (pow1.amount >= 10)
         {
@@ -74,6 +75,7 @@ public class SetSkillController : MonoBehaviour
             cloneSpeel4 = pow4.amount;
         }
     }
+
     void Update()
     {
         #region 
@@ -82,7 +84,7 @@ public class SetSkillController : MonoBehaviour
         amount3.text = cloneSpeel3.ToString();
         amount4.text = cloneSpeel4.ToString();
 
-        if (pow1.amount > 0)
+        if (cloneSpeel1 > 0)
         {
             spell1.enabled = true;
         }
@@ -91,7 +93,7 @@ public class SetSkillController : MonoBehaviour
             spell1.enabled = false;
         }
         //
-        if (pow2.amount > 0)
+        if (cloneSpeel2 > 0)
         {
             spell2.enabled = true;
         }
@@ -100,7 +102,7 @@ public class SetSkillController : MonoBehaviour
             spell2.enabled = false;
         }
         //
-        if (pow3.amount > 0)
+        if (cloneSpeel3 > 0)
         {
             spell3.enabled = true;
         }
@@ -109,7 +111,7 @@ public class SetSkillController : MonoBehaviour
             spell3.enabled = false;
         }
         //
-        if (pow4.amount > 0)
+        if (cloneSpeel4 > 0)
         {
             spell4.enabled = true;
         }

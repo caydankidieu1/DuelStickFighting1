@@ -281,13 +281,13 @@ namespace UnityEngine.UI.Extensions.Examples
             if (cloneCheck >= ageCheck)
             {
                 Debug.Log("You are old enough " + cloneCheck);
-                ManagerAds.Ins.firstGame();
+                ManagerAds.Ins.firstGameFall();
                 hideCanvasFirstGame();
             }
             else if (cloneCheck < ageCheck)
             {
                 Debug.Log("You are not old enough " + cloneCheck);
-                ManagerAds.Ins.firstGameFall();
+                ManagerAds.Ins.firstGame();
                 hideCanvasFirstGame();
             }
         }

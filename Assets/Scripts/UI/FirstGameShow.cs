@@ -20,6 +20,8 @@ public class FirstGameShow : MonoBehaviour
             canvas.alpha = 1;
             canvas.blocksRaycasts = true;
         }
+
+        Debug.Log(test);
     }
 
     public void Reset()

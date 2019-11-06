@@ -438,6 +438,8 @@ public class WeaponStoreUI : MonoBehaviour
                                 item.SetValues();
                             }
                         }
+
+                        SaveWeapon();
                     }
                 }
                 else

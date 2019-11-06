@@ -286,7 +286,7 @@ public class ManagerAds : MonoBehaviour
     public void firstGameFall()
     {
         isUnder18Age = false;
-        PlayerPrefs.SetString(Tags.beginAll, "false");
+        PlayerPrefs.SetString(Tags.beginAll, "true");
     }
 
     public void ShowBanner()
